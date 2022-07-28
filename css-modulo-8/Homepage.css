@@ -1,0 +1,135 @@
+
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			  background-color: #9779cc
+			}
+
+			/* Style the header */
+			header {
+			  background-color:#219b1f;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 25px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 20%;
+			  background: #9779cc;
+			  padding: 40px;
+			}
+
+            /* Links */
+            a{
+                color: black;
+                text-decoration: none;
+            }
+
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+            
+            ul a:link {
+                text-decoration: none;
+            }
+
+            ul a:hover{
+				text-decoration:underline;
+                background-color: rgb(164, 153, 153);
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 80%;
+			  background-color: #9779cc;
+             
+			}
+
+            section{
+                background-color: #9779cc;
+            }
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #219b1f;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+            article img {
+                width:300px;
+                height:300px;
+              }
+
+			div{
+				display: flex; 
+				flex-direction: row;
+				margin: auto;
+				} 
+			table {
+				max-width: 100%;
+				background-color: transparent;
+				border-collapse: collapse;
+				border-spacing: 0;
+				font-family: arial;
+				}
+			.table {
+					border-bottom: #999999 solid 1px;
+					width: 100%;
+					margin-bottom: 20px;
+				}
+			@media(max-width: 1024px){
+				div{
+				display: inline-block;
+				}
+		
+			}
+			@media (max-width: 768px) {
+
+				body, nav, article, section{
+					background-color: #cc7979;
+				}
+				
+			}
+
+			@media(max-width: 320px){
+				section nav{
+					display: inline-table;
+					width: 100%;
+				}
+				body, nav, article, section{
+					width: 100%
+				}
+				article{
+					padding: 0px;
+				}
+				table{
+					margin: auto;
+				}
+				
+			}
+ 
+
+  
+
+  
+
+

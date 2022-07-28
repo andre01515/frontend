@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML -Formulários</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<link rel="stylesheet" type="text/css" href="./css/arquivo.css">
+		  <link rel="stylesheet" type="text/css" href="./css-modulo-8/Homepage.css">
+	</head>
+	<body>
+
+		<header>
+			<h2>Fale Conosco</h2>
+		</header>
+
+		<section>
+			<nav>
+				<h3>Portifólio</h3>
+				<ul>
+					<li><a href="./homepage-modulo-9.html">Home</a></li>
+					<li><a href="05-Formularios.html" >Formulários</a></li>
+					<li><a href="02-Listas_e-links.html">Listas e Links</a></li>
+					<li><a href="03-tabelas_e_layouts.html">Layouts</a></li>
+				</ul>
+				<h3>Redes Sociais</h3>
+				<div>
+					<div class=".box"><a href="https://www.linkedin.com/in/andré-mohr-a54245234/" target="blank">
+					<img src="./imagens/linkedin.png" alt="img" style="width:45px;height:45px;"></div>
+					<div class=".box"><a href="https://www.instagram.com//andre.carrao/" target="blank">
+					<img src="./imagens/instagram.png" alt="img" style="width:45px;height:45px;"></div>
+					<div class=".box"><a href="https://www.facebook.com/andre.carrao.9/" target="blank">
+					<img src="./imagens/facebook.png" alt="img" style="width:45px;height:45px;" target="blank"></a></div>
+					<div class=".box"><a href="https://wa.me/5541988515445?text=Olá André" target="blank">
+					<img src="./imagens/whatsapp.png" alt="img" style="width:45px;height:45px;"></a></div>
+				</div> 
+			</nav>
+			<article>
+				<h1>Contato</h1>
+				<p>Preencha os campos abaixos</p>
+
+				<form method="post">
+					<div>
+						<label for="nome">Nome</label><br>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui">
+					</div>
+					<div>
+						<label for="email">E-mail</label><br>
+						<input type="email" name="email" id="email" placeholder="Seu email">
+					</div>
+					<div>
+						<label for="mensagem">Mensagem</label><br>
+						<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+					</div>
+					<div>
+						<p>
+						<label style="position: relative; line-height: 23px; white-space: nowrap; overflow: hidden">Qual linguagem você domina?</label>
+						<input type="radio" name="linguagens" value="html"> HTML
+						<input type="radio" name="linguagens" value="css"> CSS
+						<input type="radio" name="linguagens" value="javascript"> JS
+						</p>
+					</div>
+					<div>
+						<p>
+						<label style="position: relative; line-height: 23px; white-space: nowrap; overflow: hidden">Quais linguagens você conhece?</label>
+						<input type="checkbox" name="linguagens" value="html"> HTML
+						<input type="checkbox" name="linguagens" value="css"> CSS
+						<input type="checkbox" name="linguagens" value="javascript"> JS
+						</p>
+					</div>
+					<div>
+						<label >Qual sua cor favorita?</label>
+						<select>
+							<option value="azul">Azul</option>
+							<option value="verde">Verde</option>
+							<option value="vermelho" >Vermelho</option>
+						</select>
+
+					</div>
+					<div>
+						<input type="submit">
+					</div>
+				</form>
+			</article>
+		</section>
+			<footer>Desenvolvido por André</footer>
+		
+	</body>
+</html>
